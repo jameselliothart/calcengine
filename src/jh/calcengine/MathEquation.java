@@ -22,7 +22,7 @@ public class MathEquation {
     public double getResult() {return result;}
 
     public MathEquation() {}
-    private MathEquation(char opCode) {
+    MathEquation(char opCode) {
         this.opCode = opCode;
     }
 
@@ -30,6 +30,12 @@ public class MathEquation {
         this(opCode);
         this.leftVal = leftVal;
         this.rightVal = rightVal;
+    }
+
+    public void execute(double leftVal, double rightVal) {
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
+        execute();
     }
 
     public void execute() {
