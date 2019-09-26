@@ -16,7 +16,7 @@ public class Main {
         CalculateHelper helper = new CalculateHelper();
         for(String statement:statements) {
             helper.process(statement);
-            System.out.println(helper.result);
+            System.out.println(helper);
         }
     }
 
